@@ -1,0 +1,7 @@
+{
+  "name": "bree-portfolio",
+  "version": "1.0.0",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
