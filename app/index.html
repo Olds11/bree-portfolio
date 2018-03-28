@@ -2,15 +2,17 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Ubuntu:300,300i,400,700" rel="stylesheet">
   <title>Bree Schmidt - Front End Web Developer</title>
   <meta name="keywords" content="web development, web design, front end web development">
   <meta name="description" content="I'm a front end developer with a marketing background. I'm passionate about making functional &amp; creative websites that capture your audiences.">
+  <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <img src="assets/images/icons/white_logo_transparent_background-small.png">
-    <a href="#">Get in Touch</a>
+    <img src="assets/images/icons/logo-bree-white-bg-300px.jpg">
+    <a href="#" class="btn">Get In Touch</a>
     <nav>
       <ul>
         <li><a href="#about-me">About Me</a></li>
@@ -22,79 +24,103 @@
     </nav>
   </header>
 
-  <div class="large-hero">
-    <img src="assets/images/hero-image--large-full-size-croped.jpg">
-    <h1>Creating &amp; Developing</h1>
-    <h2>Beautiful and Functional Websites</h2>
-    <p>Hello world! My name is Bree. I'm a front end developer with a marketing background, and I am passionate about making functional and creative websites that capture your audiences.</p>
-    <p><a href="#">Get in Touch</a></p>
+  <div class="large-hero large-hero__background">
+    <div class="large-hero__text-content">
+        <div class="wrapper">
+          <h1 class="large-hero__title">Looking for a <span class="general__font--orange">Web Expert</span>?</h1>
+          <h2 class="large-hero__subtitle">Look No Further</h2>
+          <div class="large-hero__image">
+            <img src="assets/images/icons/logo_transparent-medium.png">
+          </div>
+          <p class="large-hero__description">I'm a <span class="general__font--orange">front end developer</span> with an <span class="general__font--orange">internet marketing</span> background.</p>
+          <p><a href="#" class="btn btn--large">View My Work</a></p>
+        </div>
+      </div>
   </div>
 
-  <div id="about-me">
-    <h2>About Me</h2>
-    <h3>Internet Marketing, SEO, &amp; Web Development</h3>
-    <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
-    <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe">
-    <h2>Here&rsquo;s how I got started&hellip;</h2>
-    <p>My fascination with the internet and web development started over 3 years ago when I pursued a Masters in Integrated Marketing Communications. My first technical course was in Search Engine Optimization, and I became interested in using website analytics and data to improve websites. I became a Director of Operations for Send It Rising Internet Marketing, where we developed websites for clients, performed SEO, and managed PPC ads.</p>
-    <p>As I became more knowledgeable about websites and the internet, I decided that web development was my passion. I love that it requires both a technical and creative skill set, and I enjoy bringing ideas to life.</p>
-    <p>I have completed many courses from Treehouse and Udemy, including full courses dedicated to front end web development and web design. My goals are to expand into back end web development and to develop into a JavaScript expert.</p>
+  <div id="about-me" class="page-section">
+    <div class="wrapper">
+      <h2 class="headline">About Me</h2>
+      <div class="headline__image-container">
+            <img class="headline--image" src="assets/images/bree-sm-cropped.jpg" alt="picture of web developer Bree Schmidt">
+      </div>
+      <h3 class="headline__intro">Hello world! My name is Bree. I'm a <strong>front end developer </strong>with an <strong>internet marketing</strong> background. I am passionate about creating functional and stunning websites that capture your audience's interest.</h3>
+      <br>
+        <hr class="style13">
+      <br>
+      <div class="wrapper-small">
+        <h3 class="headline__subheading">Internet Marketing, SEO, &amp; Web Development</h3>
+        <p class="general__paragraph">My fascination with the internet and web development started over 3 years ago when I pursued a Masters in Integrated Marketing Communications. One of my favorite technical courses was about Search Engine Optimization and web analytics, and I became increasingly interested in using website analytics and data to improve websites. My experience further developed when I became the Director of Operations for Send It Rising Internet Marketing. We developed websites for clients, performed SEO, and managed PPC ads.</p>
+        <p class="general__paragraph">As I became more knowledgeable about websites and the internet, I decided that web development was my passion. I love that it requires both a technical and creative skill set, and I enjoy bringing ideas to life.</p>
+        <p class="general__paragraph">I have completed many courses from Treehouse and Udemy, including full courses dedicated to front end web development and web design. My goals are to expand into back end web development and to develop into a JavaScript expert.</p>
+      </div>
+    </div>
   </div>
 
-  <div id="areas-expertise">
-    <img src="assets/images/icons/star.svg">
-    <h2>Areas of Expertise</h2>
-  
-    <img src="assets/images/icons/rain.svg">
-    <h3>Responsive Web Design</h3>
-    <p>Coming from an internet marketing background, I understand the importance of making a website look good and function well on different devices. Your website is an important touch point for your audience, and you don't want to lose them because the website doesn't work well on mobile. Using HTML5, CSS, and JavaScript, I make aesthetically pleasing and functional websites for users of multiple devices.</p>
-
-    <img src="assets/images/icons/wifi.svg">
-    <h3>User Experience &amp; Internet Marketing</h3>
-    <p>A clean website, proper website structure, and fast load times are fundamental to a good user experience. I incorporate this philosophy into my projects.</p>
-
-    <img src="assets/images/icons/globe.svg">
-    <h3>Search Engine Optimization (SEO) &amp; Analytics</h3>
-    <p>You want your website to be found, and optimizing your website for search engines is one key way for your audience to find your site. I practice white hat SEO techniques and have gotten many local businesses' websites on the first page of Google.</p>
-    
-
-    <img src="assets/images/icons/fire.svg">
-    <h3>Workflow &amp; Time Management</h3>
-    <p>I use a variety of tools to streamline my workflow: GitHub/git, Node.js, Gulp, postCSS, and SASS. I'm am constantly trying to learn new ways to boost my efficiency without sacrificing quality.</p>
+  <div id="areas-expertise" class="page-section page-section--orange">
+    <div class="wrapper">
+      <h2 class="headline headline--black">Areas of Expertise</h2>
+      
+      <div class="row">
+        <div class="row__col-3-medium">
+          <img src="assets/images/svg-download/responsive.svg" class="svg">
+          <h3 class="headline__expertise">Responsive Web Design</h3>
+          <p class="general__paragraph general__paragraph--small">From both a marketing and user experience standpoint, a website needs to look good and function well on different devices. You don't want to lose your customers because the website doesn't work well on mobile.</p>
+        </div>
+        <div class="row__col-3-medium">
+          <img src="assets/images/svg-download/user.svg" class="svg">
+          <h3 class="headline__expertise">User Experience &amp; Internet Marketing</h3>
+          <p class="general__paragraph general__paragraph--small">A clean website, proper website structure, clear calls to action, and fast load times are fundamental to a good user experience. I incorporate this philosophy into my projects.</p>
+        </div>
+        <div class="row__col-3-medium">
+          <img src="assets/images/svg-download/seo.svg" class="svg">
+          <h3 class="headline__expertise">Search Engine Optimization (SEO) &amp; Analytics</h3>
+          <p class="general__paragraph general__paragraph--small">You want your website to be found, and optimizing your website for search engines is one key way for your audience to find your site. I practice white hat SEO and have gotten local businesses on the first page of Google.</p>
+        </div>
+        <div class="row__col-3-medium">
+          <img src="assets/images/svg-download/workflow.svg" class="svg">
+          <h3 class="headline__expertise">Workflow &amp; Time Management</h3>
+          <p class="general__paragraph general__paragraph--small">I use a variety of tools to streamline my workflow: GitHub/git, Node.js, Gulp, PostCSS, and SASS. I'm am constantly trying to learn new ways to boost my efficiency without sacrificing quality.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div id="experience">
-    <img src="assets/images/icons/comment.svg">
-    <h2>Experience</h2>
+  <div id="experience page-section">
+    <div class="wrapper">
+      <img src="assets/images/icons/comment.svg">
+      <h2>Experience</h2>
 
-    <img src="assets/images/testimonial-jane.jpg">
-    <h3>Internet Marketing Management</h3>
-    <h3>Sep 2016-Feb 2018</h3>
-    <ul>
-      <li>Managed 37 clients’ search engine optimization (SEO) programs (blogs, social media, keyword research, and on-site SEO)</li>
-      <li>Oversaw and executed pay per click (PPC) programs totaling over $30,000 per month</li>
-      <li>Coordinated web development and content creation with vendors</li>
-      <li>Analyzed and interpreted Google Analytics and PPC metrics for developing client campaigns</li>
-      <li>Formalized standard operating procedures for company’s client operations</li>
-    </ul>
+      <img src="assets/images/testimonial-jane.jpg">
+      <h3>Internet Marketing Management</h3>
+      <h3>Sep 2016-Feb 2018</h3>
+      <ul>
+        <li>Managed 37 clients’ search engine optimization (SEO) programs (blogs, social media, keyword research, and on-site SEO)</li>
+        <li>Oversaw and executed pay per click (PPC) programs totaling over $30,000 per month</li>
+        <li>Coordinated web development and content creation with vendors</li>
+        <li>Analyzed and interpreted Google Analytics and PPC metrics for developing client campaigns</li>
+        <li>Formalized standard operating procedures for company’s client operations</li>
+      </ul>
 
-    <img src="assets/images/testimonial-john.jpg">
-    <h3>Research &amp; Analysis</h3>
-    <h3>Air Force: May 2011-May 2016</h3>
-    <ul>
-      <li>Led small teams in day-to-day research and analysis and managed larger groups up to 50 people</li>
-      <li>Prioritized tasks and gained an excellent track record of delivering research results within tight deadlines</li>
-      <li>Proven ability to quickly learn new topics, technology, databases, and systems</li>
-      <li>Communicated research results in the form of PowerPoint presentations, Excel spreadsheets, graphics, and reports</li>
-    </ul>
+      <img src="assets/images/testimonial-john.jpg">
+      <h3>Research &amp; Analysis</h3>
+      <h3>Air Force: May 2011-May 2016</h3>
+      <ul>
+        <li>Led small teams in day-to-day research and analysis and managed larger groups up to 50 people</li>
+        <li>Prioritized tasks and gained an excellent track record of delivering research results within tight deadlines</li>
+        <li>Proven ability to quickly learn new topics, technology, databases, and systems</li>
+        <li>Communicated research results in the form of PowerPoint presentations, Excel spreadsheets, graphics, and reports</li>
+      </ul>
+    </div>
   </div>
 
-  <div id="education">
-    Treehouse Dec 2017- Present - tracks completed web design, front end web development, beginning JavaScript. Currently studying full-stack JavaScript
-    Udemy Dec 2017- Present - HTML5, CSS, JavaScript, Web Developer Workflow
-    Master's in Integrated Marketing Communications, West Virginia University, GPA 4.0. (2017)
-    Bachelor of Science, Geospatial Sciences, United States Air Force Academy, CO. (2011) distinguished graduate (top 10%) with 3.7 GPA. Awarded as top student for major
-
+  <div id="education" class="page-section">
+    <div class="wrapper">
+      Treehouse Dec 2017- Present - tracks completed web design, front end web development, beginning JavaScript. Currently studying full-stack JavaScript
+      Udemy Dec 2017- Present - HTML5, CSS, JavaScript, Web Developer Workflow
+      Master's in Integrated Marketing Communications, West Virginia University, GPA 4.0. (2017)
+      Bachelor of Science, Geospatial Sciences, United States Air Force Academy, CO. (2011) distinguished graduate (top 10%) with 3.7 GPA. Awarded as top student for major
+    </div>
   </div>
 
   <div class="my-work">
@@ -102,7 +128,10 @@
   </div>
 
   <footer>
-    <p>Copyright &copy; 2018 Bree Schmidt. All rights reserved. <a href="#">Get in Touch</a></p>
+    <div class="wrapper">
+      <p>Copyright &copy; 2018 Bree Schmidt. All rights reserved. <a href="#" class="btn">Get in Touch</a></p>
+      <p>Icons made by <a href="https://www.freepik.com" target="_blank">Freepik</a> and <a href="https://smashicons.com/" target="_blank">Smashcoins</a> from <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a> </p>
+    </div>
   </footer>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"

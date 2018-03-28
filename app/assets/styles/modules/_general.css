@@ -1,0 +1,37 @@
+.general {
+
+	&__font {
+
+		&--orange {
+			color: $mainOrange;
+		}
+
+		&--orange:hover {
+			color: $grey;
+		}
+
+	}
+
+	&__paragraph {
+		font-weight: 300;
+		line-height: 1.6;
+		font-size: 1rem;
+
+
+		@mixin atSmall {
+			font-size: 1.2rem;
+		}
+
+		&--small {
+			@mixin atSmall {
+			font-size: 1.05rem;
+			text-align: center;
+			}
+
+		}
+
+
+	}
+
+
+}

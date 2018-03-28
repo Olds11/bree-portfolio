@@ -1,0 +1,52 @@
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+
+	
+	
+
+
+	/*@mixin clearFix;*/
+
+	&__col-3-medium {
+		width: 100%;
+		margin: auto;
+		height: 275px;
+		
+
+
+		
+		
+
+		@mixin atSmall {
+			width: 45%;
+			height: 370px;
+			margin: auto;
+		}
+
+		@mixin atMedium {
+			width: 22%;
+			height: 400px;
+			margin: auto;
+		}
+
+		/*@mixin atSmall {
+			width: 45%;
+			margin-right: 2.5%;
+			float:left;
+
+		}
+
+		@mixin atMedium {
+		width: 22%;
+		float: left;
+		margin-right: 3%;
+		}*/
+	}
+
+	
+
+}

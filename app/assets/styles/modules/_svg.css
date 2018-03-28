@@ -1,0 +1,9 @@
+.svg {
+	width: 75px;
+	display: block;
+	margin: 0 auto;
+	
+	&:hover {
+		transform: scale(1.1);
+	}
+}

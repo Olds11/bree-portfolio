@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Ubuntu', sans-serif;
+	color: $darkBlack;
+	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+hr.style13 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px $grey inset;
+	margin-top: 2rem;
+}
