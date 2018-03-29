@@ -8,11 +8,16 @@
 	&--is-expanded {
 		background-color: rgba($mainOrange, .90);
 	}
+
 	
 
 	@mixin atMedium {
 		background-color: rgba($mainOrange, .45);
 		position: fixed;
+
+		&--dark {
+			background-color: rgba($mainOrange, .90);
+		}
 	}
 
 	&__btn-container {
@@ -22,6 +27,8 @@
 		}
 	}
 
+	
+
 	&__logo {
 		position: absolute;
 		left: 50%;
@@ -29,10 +36,18 @@
 		transform-origin: 50% 0;
 		background-color: $mainOrange;
 		top: 0;
+		transition: transform .3s ease-out;
+		
+
+		
 
 		@mixin atMedium {
 			left: auto;
 			transform: translateX(0) scale(1);
+
+			.site-header--dark & {
+				transform: scale(.62);
+			}
 		}
 
 		
@@ -40,6 +55,7 @@
 		&--picture {
 			height: 100px;
 			padding: 5px;
+			
 		}
 	}
 
