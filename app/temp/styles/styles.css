@@ -778,6 +778,9 @@ a {
 				background-color: transparent
 
 		}
+				.primary-nav--pull-right a.is-current-link {
+					color: #171820;
+				}
 	}
 
 .reveal-item {

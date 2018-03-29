@@ -13,7 +13,9 @@
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
-        <img src="assets/images/icons/white_logo_transparent_background-small.png" class="site-header__logo--picture">
+        <a href="#">
+          <img src="assets/images/icons/white_logo_transparent_background-small.png" class="site-header__logo--picture">
+        </a>
       </div>
       <div class="site-header__menu-icon">
         <div class="site-header__menu-icon__middle"></div>
@@ -24,10 +26,10 @@
         </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#my-work">My Work</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#about-me-1" id="about-me">About Me</a></li>
+            <li><a href="#my-work-1" id="my-work">My Work</a></li>
+            <li><a href="#experience-1" id="experience">Experience</a></li>
+            <li><a href="#education-1" id="education">Education</a></li>
           </ul>
         </nav>
       </div>
@@ -43,12 +45,12 @@
             <img src="assets/images/icons/logo_transparent-medium.png">
           </div>
           <p class="large-hero__description">I'm a <span class="general__font--orange">front end developer</span> with an <span class="general__font--orange">internet marketing</span> background.</p>
-          <p><a href="#" class="btn btn--large">View My Work</a></p>
+          <p><a href="#my-work-link" class="btn btn--large">View My Work</a></p>
         </div>
       </div>
   </div>
 
-  <div id="about-me" class="page-section">
+  <div id="about-me-1" class="page-section" data-matching-link="#about-me">
     <div class="wrapper">
       <h2 class="headline">About Me</h2>
       <div class="headline__image-container">
@@ -104,8 +106,8 @@
     </div>
   </div>
 
-  <div id="my-work" class="page-section">
-    <div class="wrapper">
+  <div id="my-work-1" class="page-section" data-matching-link="#my-work">
+    <div id="my-work-link" class="wrapper">
       <h2 class="headline">My Work</h2>
       <div class="row">
 
@@ -133,7 +135,7 @@
     
   </div>
 
-  <div id="experience" class="page-section">
+  <div id="experience-1" class="page-section" data-matching-link="#experience">
     <div class="wrapper">
      
       <h2>Experience</h2>
@@ -161,7 +163,7 @@
     </div>
   </div>
 
-  <div id="education" class="page-section">
+  <div id="education-1" class="page-section" data-matching-link="#educaiton">
     <div class="wrapper">
       Treehouse Dec 2017- Present - tracks completed web design, front end web development, beginning JavaScript. Currently studying full-stack JavaScript
       Udemy Dec 2017- Present - HTML5, CSS, JavaScript, Web Developer Workflow
