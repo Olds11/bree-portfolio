@@ -5,10 +5,10 @@
 
 	&__background {
 		background-color: $darkBlack;
-		height: 75vh;
+		height: 660px;
 
 		@mixin atSmall {
-			height: 95vh;
+			height: 750px;
 		}
 
 	}
@@ -84,5 +84,10 @@
 		width: 100%;
 		text-align: center;
 		color: #fff;
+		margin-top: 3rem;
+
+		@mixin atSmall {
+			margin-top: 5rem;
+		}
 	}
 }

@@ -9,6 +9,17 @@
 	border-radius: 5px;
 	transition: all .3s ease-out;
 
+	&--small {
+			border: 1px solid $mainOrange;
+
+			&:hover {
+				background-color: $darkBlack;
+				color: $mainOrange;
+
+			}
+
+	}
+
 	&--large {
 		font-size: 1rem;
 		padding: .75rem 1.2rem;
@@ -28,7 +39,7 @@
 		@mixin atSmall {
 			font-size: 1.25rem;
 			padding: 1.1rem 1.9rem;
-			margin-top: 2.5rem;
+			margin-top: .5rem;
 		}
 	}
 }

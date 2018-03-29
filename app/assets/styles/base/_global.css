@@ -18,3 +18,8 @@ hr.style13 {
 	box-shadow: 0 10px 10px -10px $grey inset;
 	margin-top: 2rem;
 }
+
+a {
+	text-decoration: none;
+	color: #fff;
+}

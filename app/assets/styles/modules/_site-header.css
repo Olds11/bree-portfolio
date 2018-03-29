@@ -1,0 +1,161 @@
+.site-header {
+	padding: 10px 0;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	transition: all .3s ease-out;
+
+	&--is-expanded {
+		background-color: rgba($mainOrange, .90);
+	}
+	
+
+	@mixin atMedium {
+		background-color: rgba($mainOrange, .45);
+		position: fixed;
+	}
+
+	&__btn-container {
+
+		@mixin atMedium {
+			float: right;
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) scale(.8);
+		transform-origin: 50% 0;
+		background-color: $mainOrange;
+		top: 0;
+
+		@mixin atMedium {
+			left: auto;
+			transform: translateX(0) scale(1);
+		}
+
+		
+
+		&--picture {
+			height: 100px;
+			padding: 5px;
+		}
+	}
+
+	&__menu-content {
+		/*display: none;*/
+		opacity: 0;
+		position:relative;
+		z-index: -10;
+		padding-top: 100px;
+		text-align: center;
+		transition: all .3s ease-out;
+		
+
+		&--is-displayed {
+			/*display: block;*/
+			opacity: 1;
+			z-index: 1;
+			
+
+
+		}
+
+		@mixin atMedium {
+			opacity: 1;
+			z-index: 1;
+			padding-top: 0;
+			display: block; 
+		}
+	}
+
+
+	&__menu-icon {
+		width: 20px;
+		height: 19px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+
+		&::before {
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: transform .3s ease-out;
+			transform-origin: 0 0;
+
+		}
+
+		&__middle {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .3s ease-out;
+			transform-origin: 0 50%;
+
+
+		}
+
+		&::after {
+			content:"";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: transform .3s ease-out;
+			transform-origin: 0 100%;
+		}
+
+		&--close-x {
+
+			&::before {
+				transform: rotate(45deg) scaleX(1.25);
+				
+			}
+
+			.site-header__menu-icon__middle {
+				opacity: 0;
+				transform: scaleX(0);
+				
+			}
+
+			&::after {
+				transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+				
+
+			}
+
+		}
+
+
+
+
+
+		@mixin atMedium {
+			display: none;
+		}
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

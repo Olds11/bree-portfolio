@@ -7,7 +7,21 @@
 
 	
 	
+	&__col-2-medium {
+		width: 100%;
+		margin: auto;
+		height: 275px;
 
+		@mixin atMedium {
+			width: 45%;
+			height: 500px; 
+			margin: auto;
+
+			&:hover {
+				transform: scale(2) translateY(20px);
+			}
+		}
+	}
 
 	/*@mixin clearFix;*/
 
@@ -29,8 +43,10 @@
 
 		@mixin atMedium {
 			width: 22%;
-			height: 400px;
+			height: 330px;
 			margin: auto;
+			position: relative;
+			top: -120px;
 		}
 
 		/*@mixin atSmall {

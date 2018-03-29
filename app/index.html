@@ -10,18 +10,28 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <img src="assets/images/icons/logo-bree-white-bg-300px.jpg">
-    <a href="#" class="btn">Get In Touch</a>
-    <nav>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#areas-expertise">Areas of Expertise</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#my-work">My Work</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <img src="assets/images/icons/white_logo_transparent_background-small.png" class="site-header__logo--picture">
+      </div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn btn--small">Get In Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <div class="large-hero large-hero__background">
@@ -59,26 +69,34 @@
 
   <div id="areas-expertise" class="page-section page-section--orange">
     <div class="wrapper">
-      <h2 class="headline headline--black">Areas of Expertise</h2>
+      <h2 class="headline headline--black headline--hide">Areas of Expertise</h2>
       
       <div class="row">
         <div class="row__col-3-medium">
-          <img src="assets/images/svg-download/responsive.svg" class="svg">
+          <div class="work-image-container--svg">
+            <img src="assets/images/svg-download/responsive.svg" class="svg">
+          </div>
           <h3 class="headline__expertise">Responsive Web Design</h3>
           <p class="general__paragraph general__paragraph--small">From both a marketing and user experience standpoint, a website needs to look good and function well on different devices. You don't want to lose your customers because the website doesn't work well on mobile.</p>
         </div>
         <div class="row__col-3-medium">
-          <img src="assets/images/svg-download/user.svg" class="svg">
+          <div class="work-image-container--svg">
+            <img src="assets/images/svg-download/user.svg" class="svg">
+          </div>
           <h3 class="headline__expertise">User Experience &amp; Internet Marketing</h3>
           <p class="general__paragraph general__paragraph--small">A clean website, proper website structure, clear calls to action, and fast load times are fundamental to a good user experience. I incorporate this philosophy into my projects.</p>
         </div>
         <div class="row__col-3-medium">
-          <img src="assets/images/svg-download/seo.svg" class="svg">
+          <div class="work-image-container--svg">
+            <img src="assets/images/svg-download/seo.svg" class="svg">
+          </div>
           <h3 class="headline__expertise">Search Engine Optimization (SEO) &amp; Analytics</h3>
-          <p class="general__paragraph general__paragraph--small">You want your website to be found, and optimizing your website for search engines is one key way for your audience to find your site. I practice white hat SEO and have gotten local businesses on the first page of Google.</p>
+          <p class="general__paragraph general__paragraph--small">You want your website to be found. Optimizing your website for search engines is key to your audiences finding your site. I practice white hat SEO and have gotten local businesses on the 1st page of Google.</p>
         </div>
         <div class="row__col-3-medium">
-          <img src="assets/images/svg-download/workflow.svg" class="svg">
+          <div class="work-image-container--svg">
+            <img src="assets/images/svg-download/workflow.svg" class="svg">
+          </div>
           <h3 class="headline__expertise">Workflow &amp; Time Management</h3>
           <p class="general__paragraph general__paragraph--small">I use a variety of tools to streamline my workflow: GitHub/git, Node.js, Gulp, PostCSS, and SASS. I'm am constantly trying to learn new ways to boost my efficiency without sacrificing quality.</p>
         </div>
@@ -86,12 +104,41 @@
     </div>
   </div>
 
-  <div id="experience page-section">
+  <div id="my-work" class="page-section">
     <div class="wrapper">
-      <img src="assets/images/icons/comment.svg">
+      <h2 class="headline">My Work</h2>
+      <div class="row">
+
+        <div class="row__col-2-medium">
+          <div class="work-image-container">
+            <picture> 
+              <source media="(max-width: 880px)" srcset="assets/images/drone-project-medium-min.png">
+              <source media="(min-width: 1200px)" srcset="assets/images/drone-project-lg-min.png">
+              <img src="assets/images/drone-project-small-min.png" alt="preview of drone photography website project">
+            </picture>
+          </div>
+        </div>
+        <div class="row__col-2-medium">
+          <div class="work-image-container">
+            <picture> 
+              <source media="(max-width: 880px)" srcset="assets/images/drone-project-medium-min.png">
+              <source media="(min-width: 1200px)" srcset="assets/images/drone-project-lg-min.png">
+              <img src="assets/images/drone-project-small-min.png" alt="preview of drone photography website project">
+            </picture>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <div id="experience" class="page-section">
+    <div class="wrapper">
+     
       <h2>Experience</h2>
 
-      <img src="assets/images/testimonial-jane.jpg">
+     
       <h3>Internet Marketing Management</h3>
       <h3>Sep 2016-Feb 2018</h3>
       <ul>
@@ -102,7 +149,7 @@
         <li>Formalized standard operating procedures for company’s client operations</li>
       </ul>
 
-      <img src="assets/images/testimonial-john.jpg">
+      
       <h3>Research &amp; Analysis</h3>
       <h3>Air Force: May 2011-May 2016</h3>
       <ul>
@@ -123,13 +170,11 @@
     </div>
   </div>
 
-  <div class="my-work">
-    
-  </div>
+
 
   <footer>
     <div class="wrapper">
-      <p>Copyright &copy; 2018 Bree Schmidt. All rights reserved. <a href="#" class="btn">Get in Touch</a></p>
+      <p>Copyright &copy; 2018 Bree Schmidt. All rights reserved. <a href="#" class="btn btn--small">Get in Touch</a></p>
       <p>Icons made by <a href="https://www.freepik.com" target="_blank">Freepik</a> and <a href="https://smashicons.com/" target="_blank">Smashcoins</a> from <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a> </p>
     </div>
   </footer>
@@ -137,6 +182,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/scripts/app.js"></script>
 
 </body>
 </html>

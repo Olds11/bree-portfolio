@@ -1,0 +1,71 @@
+.primary-nav {
+
+	
+	&--pull-right {
+
+		@mixin atMedium {
+			float: right;
+		}
+
+		ul {
+			list-style: none;
+			margin: 1.5rem auto 1rem auto;
+			padding: 0;
+
+
+			@mixin clearFix;
+
+			@mixin atMedium {
+				margin: 0 auto;
+			}
+		}
+
+		li {
+			display: inline-block;
+			font-weight: 300;
+			padding: 12px 20px 10px 0;
+
+
+			@mixin atMedium {
+				float:left;
+				display: block;
+			}
+
+		}
+
+		li:last-child {
+			padding-right: 0;
+
+			@mixin atMedium {
+				padding-right: 20px;
+			}
+		}
+			
+		
+		a {
+
+			padding: 5px 8px;
+			background-color: $mainOrange;
+
+			&:hover {
+				color: $darkBlack;
+
+				@mixin atMedium {
+					color: $grey;
+				}
+			}
+
+			@mixin atMedium {
+				padding: 0;
+				background-color: transparent;
+			}
+
+		}
+
+
+		
+
+
+	}
+
+}
