@@ -474,6 +474,13 @@ a {
 		}
 	}
 
+.general__paragraph--medium {
+			font-size: .9rem;
+			color: #E8E8E8;
+			text-align: center;
+
+		}
+
 .headline {
 	font-family: 'Abel', sans-serif;
 	text-align: center;
@@ -573,6 +580,28 @@ a {
 		text-shadow: none;
 		margin-bottom: 4rem;
 	}
+
+.headline--white {
+		color: #fff;
+
+	}
+
+.headline__job {
+		color: #fff;
+		text-align: center;
+		margin-top: 3rem;
+		font-weight: 300;
+		font-size: 1.3rem;
+	}
+
+.headline__job--sub {
+			color: #E8E8E8;
+			text-align: center;
+			font-weight: 300;
+			font-size: 1.1rem;
+			font-style: italic;
+			margin-top: -.5rem;
+		}
 
 .headline__expertise {
 		text-align: center;
@@ -815,6 +844,29 @@ a {
 		border-bottom: 3px solid #171820;
 	}
 
+.page-section--grey {
+		background-image: linear-gradient(to top, rgba(223,134,29, .8), rgba(23,24,32, .8)), url("/assets/images/computer-small.jpg"); 
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		position:relative;
+
+	}
+
+@media (min-width: 800px) {
+
+.page-section--grey {
+			background-image: linear-gradient(to top, rgba(223,134,29, .8), rgba(23,24,32, .8)), url("/assets/images/computer-large.jpg")
+
+	}
+	}
+
+.page-section--clearfix {
+		clear:both;
+		content: "";
+		display: table;
+	}
+
 @media (min-width: 800px) {
 
 .primary-nav--pull-right {
@@ -952,6 +1004,39 @@ a {
 
 .row__col-2-medium {
 			width: 30%
+	}
+	}
+
+.row__col-4 {
+		height: auto;
+		width: 90%;
+		margin-bottom: 3rem;
+		background-color: rgba(188,182,174, .8);
+		padding: 0 10px 1px 10px;
+
+	}
+
+@media (min-width: 800px) {
+
+.row__col-4 {
+			height: 270px;
+			width: 45%;
+			margin-right: 2%
+
+	}
+
+			.row__col-4:last-child {
+				margin-top: -.5rem;
+				margin-right: 0;
+			}
+	}
+
+@media (min-width: 1010px) {
+
+.row__col-4 {
+			width: 30%;
+			margin-right: 2%
+
 	}
 	}
 

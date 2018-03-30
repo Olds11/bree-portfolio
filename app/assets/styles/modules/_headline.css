@@ -81,6 +81,28 @@
 		margin-bottom: 4rem;
 	}
 
+	&--white {
+		color: #fff;
+
+	}
+
+	&__job {
+		color: #fff;
+		text-align: center;
+		margin-top: 3rem;
+		font-weight: 300;
+		font-size: 1.3rem;
+
+		&--sub {
+			color: $superLightGrey;
+			text-align: center;
+			font-weight: 300;
+			font-size: 1.1rem;
+			font-style: italic;
+			margin-top: -.5rem;
+		}
+	}
+
 	&__expertise {
 		text-align: center;
 	}

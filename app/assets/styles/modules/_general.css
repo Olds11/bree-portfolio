@@ -30,6 +30,13 @@
 
 		}
 
+		&--medium {
+			font-size: .9rem;
+			color: $superLightGrey;
+			text-align: center;
+
+		}
+
 
 	}
 

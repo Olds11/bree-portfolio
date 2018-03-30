@@ -10,5 +10,22 @@
 		border-bottom: 3px solid $darkBlack;
 	}
 
+	&--grey {
+		background-image: linear-gradient(to top, rgba($mainOrange, .8), rgba($darkBlack, .8)), url("/assets/images/computer-small.jpg"); 
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		position:relative;
+
+		@mixin atMedium {
+			background-image: linear-gradient(to top, rgba($mainOrange, .8), rgba($darkBlack, .8)), url("/assets/images/computer-large.jpg"); 
+		}
+
+	}
+
+	&--clearfix {
+		@mixin clearFix;
+	}
+
 	
 }

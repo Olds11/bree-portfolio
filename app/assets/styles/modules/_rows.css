@@ -26,6 +26,32 @@
 		}
 	}
 
+	&__col-4 {
+		height: auto;
+		width: 90%;
+		margin-bottom: 3rem;
+		background-color: rgba($grey, .8);
+		padding: 0 10px 1px 10px;
+
+
+		@mixin atMedium {
+			height: 270px;
+			width: 45%;
+			margin-right: 2%;
+
+			&:last-child {
+				margin-top: -.5rem;
+				margin-right: 0;
+			}
+		}
+
+		@mixin atMediumLarge {
+			width: 30%;
+			margin-right: 2%;
+		}
+
+	}
+
 	/*@mixin clearFix;*/
 
 	&__col-3-medium {
