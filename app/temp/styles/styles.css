@@ -575,6 +575,7 @@ a {
 		margin: 15px auto;
 		overflow: hidden;
 		border-radius: 50%;
+		transition: all .3s ease-out;
 
 		
 	}
@@ -600,6 +601,9 @@ a {
 		left: 0;
 		-webkit-backface-visibility: hidden;
 		        backface-visibility: hidden;
+		transition: -webkit-transform .3s ease-out;
+		transition: transform .3s ease-out;
+		transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 		
 	}
 
