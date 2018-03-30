@@ -142,9 +142,43 @@ var stickyHeader = new StickyHeader();
 
 
 
+//modal 
 
+class Modal {
+	constructor() {
+		this.openModalButton = $(".btn--get-in-touch");
+		this.modal = $(".modal");
+		this.closeModalButton = $(".modal__close");
+		this.events();
+	}
 
+	events() {
+		//clicking open modal button
+		this.openModalButton.click(this.openModal.bind(this));
+		//clicking x close modal button
+		this.closeModalButton.click(this.closeModal.bind(this));
+		//user pushes any key
+		$(document).keyup(this.keyPreshHandler.bind(this));
+	}
 
+	openModal() {
+		this.modal.addClass("modal--is-visible");
+		return false; //prevent default behavior of browser scrolling up when link clicked
+
+	}
+
+	closeModal() {
+		this.modal.removeClass("modal--is-visible");
+	}
+
+	keyPreshHandler(e) {
+		if (e.key === "Escape") {
+			this.closeModal();
+		}
+	}
+}
+
+var modal = new Modal();
 
 
 

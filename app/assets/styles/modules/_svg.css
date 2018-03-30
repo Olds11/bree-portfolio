@@ -7,5 +7,23 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 
+	&--small {
+		width: 40px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 1rem auto;
+
+		@mixin atSmall {
+			width: 55px;
+		}
+
+
+		@mixin atMedium {
+			margin: 2rem auto;
+		}
+
+	}
+
 
 }

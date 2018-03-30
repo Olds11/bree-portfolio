@@ -9,12 +9,17 @@
 	}
 
 	&--svg {
-		width: 120px;
-		height: 120px;
-		border-radius: 50%;
-		background-color: $mainOrange;
 		position: relative;
-		margin: auto;
+		padding-bottom: 70px;
+
+		@mixin atMedium {
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			background-color: $mainOrange;
+			margin: auto;
+			padding-bottom: 0;
+		}
 
 	}
 	

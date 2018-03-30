@@ -17,9 +17,7 @@
 			height: 500px; 
 			margin: auto;
 
-			&:hover {
-				transform: scale(2) translateY(20px);
-			}
+			
 		}
 	}
 
@@ -29,7 +27,10 @@
 		width: 100%;
 		margin: auto;
 		height: 275px;
-		
+
+		&:last-child {
+			margin-top: 25px;
+		}		
 
 
 		
@@ -39,6 +40,10 @@
 			width: 45%;
 			height: 370px;
 			margin: auto;
+
+			&:last-child {
+				margin-top: 0;
+			}
 		}
 
 		@mixin atMedium {

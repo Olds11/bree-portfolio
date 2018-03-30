@@ -8,7 +8,7 @@
 		height: 660px;
 
 		@mixin atSmall {
-			height: 750px;
+			height: 760px;
 		}
 
 	}
@@ -43,6 +43,10 @@
 		margin-top: 2.5rem;
 
 		@mixin atSmall {
+			font-size: 3rem;
+		}
+
+		@mixin atMedium {
 			font-size: 4rem;
 			margin-top: 0;
 		}
@@ -55,9 +59,13 @@
 		font-size: 1.5rem;
 		margin-top: 1rem;
 		margin-bottom: 0;
-		
 
 		@mixin atSmall {
+			font-size: 1.6rem;
+		}
+		
+
+		@mixin atMedium {
 			font-size: 1.999rem;
 		}
 	}
@@ -72,8 +80,13 @@
 		margin-left: auto;
 		margin-right: auto;
 
-
 		@mixin atSmall {
+			font-size: 1.2rem;
+			padding-bottom: .2rem;
+		}
+
+
+		@mixin atMedium {
 			font-size: 1.414rem;
 		}
 	}

@@ -91,4 +91,8 @@
 		}
 	}
 
+	&--top-margin {
+		margin-top: 4rem;
+	}
+
 }
