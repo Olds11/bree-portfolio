@@ -23,8 +23,8 @@
 
 	}
 
-	&--clearfix {
-		@mixin clearFix;
+	&--bottom-margin {
+		margin-bottom: 6rem;
 	}
 
 	

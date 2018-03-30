@@ -3,6 +3,7 @@
 @import "modules/_mixins";
 @import "base/_global";
 @import "modules/_button";
+@import "modules/_footer";
 @import "modules/_general";
 @import "modules/_headline";
 @import "modules/_large-hero";

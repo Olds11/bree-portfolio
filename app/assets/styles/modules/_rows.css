@@ -32,10 +32,16 @@
 		margin-bottom: 3rem;
 		background-color: rgba($grey, .8);
 		padding: 0 10px 1px 10px;
+		transition: all .3s ease-out;
+		border: 2px solid $grey;
+
+		&:hover {
+			background-color: rgba($darkBlack, .8);
+		}
 
 
 		@mixin atMedium {
-			height: 270px;
+			height: 280px;
 			width: 45%;
 			margin-right: 2%;
 
@@ -46,8 +52,13 @@
 		}
 
 		@mixin atMediumLarge {
+			height: 320px;
 			width: 30%;
 			margin-right: 2%;
+		}
+
+		@mixin atLarge {
+			height: 270px;
 		}
 
 	}

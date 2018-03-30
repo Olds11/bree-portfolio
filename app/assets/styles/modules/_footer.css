@@ -1,0 +1,28 @@
+.footer {
+	background-color: rgba($darkBlack, .8);
+	height: 140px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: .7rem;
+	text-align: center;
+
+	@mixin atLarge {
+		height: 120px;
+		padding: .4rem;
+
+	}
+
+	&__text{
+		color: $superLightGrey;
+		font-weight: 300;
+		font-size: .7rem;
+		display: block;
+		margin-top: -5px;
+
+		@mixin atLarge {
+			display: inline-block;
+		}
+
+	}
+}
