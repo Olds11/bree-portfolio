@@ -42,4 +42,30 @@
 			margin-top: .5rem;
 		}
 	}
+
+	&--view-work {
+		
+		background-color: transparent;
+		color: #fff;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		border: 3px solid #fff;
+		border-radius: 5px;
+		padding: 3px;
+		font-size: 1.1rem;
+
+		
+
+	}
+
+	
+
+
 }
+
+
+
+
+

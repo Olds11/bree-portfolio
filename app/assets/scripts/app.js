@@ -181,6 +181,43 @@ class Modal {
 var modal = new Modal();
 
 
+//hover 
+
+// class HoverWork {
+// 	constructor() {
+// 		this.workElement = $(".work-image-container--zoom");
+// 		this.workButton = $(".btn--view-work");
+// 		this.events();
+// 	}
+
+// 	events() {
+// 		this.workElement.on("mouseenter", this.toggleButtonOn.bind(this));
+// 		//this.workElement.on("mouseleave", this.toggleButtonOff.bind(this));
+
+// 	}
+
+// 	toggleButtonOn() {
+// 		// e.stopPropagation();
+// 		// var that = this;
+// 		// this.workElement.each(function() {
+// 		// 	that.workButton.show();	
+// 		// });		
+
+
+// 	}
+
+// 	//toggleButtonOff() {
+// 		// e.stopPropagation();
+// 		// var that= this;
+// 		// this.workElement.each(function() {
+// 		// 	that.workButton.hide();
+// 		// });
+// 	//}
+
+	
+// }
+
+// var hoverWork = new HoverWork();
 
 
 

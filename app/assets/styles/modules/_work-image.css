@@ -1,6 +1,53 @@
 .work-image-container {
 	margin: 0 auto;
+	width: 90%;
+	max-width: 400px;
+	position: relative;
+	overflow: hidden;
+	transition: all .3s ease-out;
+
+	&:hover div.work-image-container--zoom {
+		transform: scale(1.4);
+		filter: brightness(70%);
+		/*to reveal button on image*/
+			& + button { 
+				opacity: 1;
+				background-color: transparent;
+				color: #fff;
+				font-weight: 300;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				border: 3px solid #fff;
+				border-radius: 5px;
+				font-size: 1.1rem;
+				cursor: pointer;
+
+			}
+	}
+
+
+	&--zoom {
+		top: 0;
+		left: 0;
+		backface-visibility: hidden;
+		overflow: hidden;
+		transform: scale(1);
+		transition: all .3s ease-out;
+		position: relative;
+
+		/*to hide button on image*/
+		& + button {   
+			opacity: 0;
+			position: absolute;
+		}
+
+		
+	}
+
 	
+
 	
 
 	
