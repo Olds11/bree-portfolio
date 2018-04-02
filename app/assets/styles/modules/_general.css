@@ -37,6 +37,10 @@
 
 		}
 
+		&--center {
+			text-align: center;
+		}
+
 
 	}
 

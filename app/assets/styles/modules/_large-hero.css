@@ -53,6 +53,24 @@
 
 	}
 
+	&__title--my-work {
+
+		margin-top: 4rem;
+		margin-bottom: -1.3rem;
+		text-shadow: 1px 1px 2px $grey;
+
+		@mixin atMedium {
+			font-size: 3rem;	
+		}
+
+		@mixin atLarge {
+			font-size: 4rem;
+		}
+		
+
+		
+	}
+
 	&__subtitle {
 		font-family: 'Abel', sans-serif;
 		font-weight: 300;
@@ -105,4 +123,6 @@
 			margin-top: 5rem;
 		}
 	}
+
+
 }

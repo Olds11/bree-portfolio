@@ -1,6 +1,6 @@
 .footer {
 	background-color: rgba($darkBlack, .8);
-	height: 140px;
+	height: 150px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -8,7 +8,7 @@
 	text-align: center;
 
 	@mixin atLarge {
-		height: 120px;
+		height: 130px;
 		padding: .4rem;
 
 	}
@@ -18,11 +18,20 @@
 		font-weight: 300;
 		font-size: .7rem;
 		display: block;
-		margin-top: -5px;
+		margin-top: -.1rem;
 
 		@mixin atLarge {
 			display: inline-block;
 		}
 
+	}
+
+	&--my-work {
+		bottom: -23rem;
+		position:relative;
+
+		@mixin atSmall {
+			bottom: -15rem;
+		}
 	}
 }

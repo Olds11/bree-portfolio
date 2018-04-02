@@ -27,5 +27,16 @@
 		margin-bottom: 6rem;
 	}
 
+	&--my-work {
+		position: relative;
+		top: 18rem;
+		margin-bottom: 4rem;
+
+		@mixin atSmall { 
+			top: 13rem;
+		}
+	
+	}
+
 	
 }

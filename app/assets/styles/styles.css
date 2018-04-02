@@ -6,6 +6,7 @@
 @import "modules/_footer";
 @import "modules/_general";
 @import "modules/_headline";
+@import "modules/_header-work-preview";
 @import "modules/_large-hero";
 @import "modules/_modal";
 @import "modules/_page-section";
@@ -13,6 +14,7 @@
 @import "modules/_reveal-items";
 @import "modules/_rows";
 @import "modules/_site-header";
+@import "modules/_slider";
 @import "modules/_svg";
 @import "modules/_work-image";
 @import "modules/_wrapper";

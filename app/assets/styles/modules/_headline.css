@@ -91,6 +91,10 @@
 
 	}
 
+	&--bottom-margin {
+		margin-bottom: 4rem;
+	}
+
 	&__job {
 		color: #fff;
 		text-align: center;

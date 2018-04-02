@@ -60,6 +60,17 @@
 
 	}
 
+	&--preview {
+		text-align: center;
+		width: 150px;
+		margin-top: 3rem;
+
+		&:hover {
+			width: 180px;
+		}
+
+	}
+
 	
 
 

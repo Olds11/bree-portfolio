@@ -1,0 +1,33 @@
+.header-work-preview {
+	position: absolute;
+	top: 4.4rem;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	/*padding-top: 5rem;*/
+	/*margin-right: auto;
+	margin-left: auto;*/
+	
+
+	&__break {
+		position: absolute;
+		width: 100%;
+		top: 16rem;
+
+		@mixin atMedium {
+			top: 14rem;
+		}
+
+
+		@mixin atLarge {
+			top: 16rem;
+		}
+
+		@mixin atXLarge {
+			top:11.5rem;
+		}
+	
+	}
+}
