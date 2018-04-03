@@ -29,6 +29,7 @@
 	&--my-work {
 		bottom: -23rem;
 		position:relative;
+		height: 170px;
 
 		@mixin atSmall {
 			bottom: -15rem;

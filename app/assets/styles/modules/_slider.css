@@ -6,6 +6,7 @@
  	background-color: rgba($grey, .2);
  	height: 285px;
  	overflow: hidden;
+
  	
 
  	@mixin atSmall {

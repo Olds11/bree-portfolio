@@ -30,4 +30,47 @@
 		}
 	
 	}
+
+	&__break--lg {
+		position: absolute;
+		width: 100%;
+		top: 20rem;
+
+		@mixin atXSmall {
+			top: 17.5rem;
+		}
+
+
+		@mixin atMedium {
+			top: 16rem;
+		}
+
+		@mixin atMediumLarge {
+			top: 15rem;
+		}
+
+		@mixin atLarge {
+			top: 15rem;
+		}
+
+		@mixin atXLarge {
+			top: 15rem;
+		}
+		
+	}
+
+	&__break--clearview {
+
+		@media screen and (min-width: 615px) {
+			top: 13rem;
+		}
+
+	}
 }
+
+
+
+
+
+
+

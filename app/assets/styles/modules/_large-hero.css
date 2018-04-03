@@ -54,10 +54,19 @@
 	}
 
 	&__title--my-work {
-
+		font-family: 'Abel', sans-serif;
+		font-weight: 300;
+		font-size: 2.5rem;
+		letter-spacing: .15rem;
+		margin-top: 2.5rem;
 		margin-top: 4rem;
 		margin-bottom: -1.3rem;
 		text-shadow: 1px 1px 2px $grey;
+
+		@mixin atSmall {
+			font-size: 2.6;
+		}
+
 
 		@mixin atMedium {
 			font-size: 3rem;	
@@ -70,6 +79,9 @@
 
 		
 	}
+
+
+
 
 	&__subtitle {
 		font-family: 'Abel', sans-serif;
