@@ -66,6 +66,30 @@
 		}
 
 	}
+
+	&__break--pig {
+		@mixin atXSmall {
+			top: 14rem;
+		}
+
+		@mixin atSmall {
+			top: 12.4rem;
+		}
+
+		@mixin atMedium {
+			top: 13rem;
+		}
+
+		@mixin atMediumLarge {
+			top: 12rem;
+		}
+
+		@mixin atLarge {
+			top: 13rem;
+		}
+		
+
+	}
 }
 
 

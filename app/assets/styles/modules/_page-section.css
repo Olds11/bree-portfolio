@@ -7,7 +7,8 @@
 
 	&--orange {
 		background-color: $mainOrange;
-		border-bottom: 3px solid $darkBlack;
+		/*border-bottom: 3px solid $darkBlack;*/
+		box-shadow: 2px 2px 3px $grey;
 	}
 
 	&--grey {

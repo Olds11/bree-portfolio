@@ -131,6 +131,10 @@
 
 	}
 
+	&__image--position-down {
+		top: 40%;
+	}
+
 
 
 }

@@ -1,6 +1,7 @@
 .large-hero {
 	position: relative;
 	border-bottom: 7px solid $mainOrange;
+	box-shadow: 2px 2px 3px $grey;
 
 
 	&__background {
@@ -78,6 +79,13 @@
 		
 
 		
+	}
+
+	&__title--responsive-sm {
+		@media (max-width: 377px) {
+			font-size: 2.3rem;
+		}
+
 	}
 
 
