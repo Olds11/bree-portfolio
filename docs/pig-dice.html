@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Abel|Ubuntu:300,300i,400,700" rel="stylesheet">
+  <title>Pig Dice Game - JavaScript-Based Game</title>
+  <meta name="keywords" content="web development, web design, front end web development">
+  <meta name="description" content="Pig: The Jeopardy Dice Game was a project I designed based off the classic dice game Pig. It was built was object-oriented Javascript.">
+  <link rel="stylesheet" href="assets/styles/styles-52af0f4e96.css"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <a href="index.html">
+          <img src="assets/images/icons/white_logo_transparent_background-small.png" class="site-header__logo--picture">
+        </a>
+      </div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn btn--small btn--get-in-touch">Get In Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#about-me-1" id="about-me">Pig: The Dice Game</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="header-work-preview">
+    <div class="wrapper">
+      <h1 class="large-hero__title large-hero__title--my-work large-hero__title--responsive-sm">Pig: The Dice Game</h1>
+    </div>
+  </div>
+
+  <div class="header-work-preview__break header-work-preview__break--pig">
+    <div class="wrapper">
+      <br>
+        <hr class="style13">
+      <br>
+    </div>
+  </div>
+
+
+  <div class="page-section" id="about-me-1" matching-data-link="#about-me">
+    
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="slideshow-container__mySlides slideshow-container--fade">
+       <!--  <img class="slideshow-container__image" src="assets/images/drone-project-lg-min.png" style="width:100%"> -->
+        <picture class="slideshow-container__image--position-down" style="width:100%"> 
+          <source media="(max-width: 1199px)" srcset="assets/images/pig-previe-medium-min.png">
+          <source media="(min-width: 1200px)" srcset="assets/images/pig-preview-lg-min.png">
+          <img src="assets/images/pig-previe-sm-min.png" alt="tablet version of the website">
+        </picture>
+       <!--  <div class="slideshow-container__text">Responsive Design</div> -->
+      </div>
+
+     
+      <!-- Next and previous buttons -->
+      <a class="slideshow-container__prev" onclick="slideShow.plusSlides(-1)">&#10094;</a>
+      <a class="slideshow-container__next" onclick="slideShow.plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="slideshow-container__dot" onclick="slideShow.currentSlide(1)"></span> 
+      
+    </div>
+
+  </div>
+
+  <div class="page-section--my-work">
+    <div class="wrapper">
+      <p class="general__paragraph">
+        Pig: The Jeopardy Dice Game was a fun project I developed to experiment with ES6 and object-oriented JavaScript. I also used Bootstrap to experiment with a front-end library.
+      </p>
+      <p class="general__paragraph--center"><a href="https://olds11.github.io/dice-game/index.html" target="_blank" class="btn btn--small btn--preview">View Site</a></p>
+    </div>
+  </div>
+
+
+  <footer class="footer footer--my-work">
+    <div class="wrapper">
+      <p><a href="#" class="btn btn--small btn--get-in-touch">Get in Touch</a></p>
+      <p class="footer__text">Copyright &copy; 2018 Bree Schmidt. All rights reserved.</p>
+      <p class="footer__text">Icons made by <a href="https://www.freepik.com" target="_blank">Freepik</a>, <a href="http://simpleicon.com/">Simpleicon</a> and <a href="https://smashicons.com/" target="_blank">Smashcoins</a> from <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a> </p>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="headline headline--top-margin"><i class="fa fa-envelope modal__icon" aria-hidden="true"></i> <br>Get In Touch</h2>
+      <div class="wrapper wrapper--narrow">
+        <p class="modal__description">For questions and comments, please contact me through LinkedIn messenger. Thank you!</p>
+        <a href="https://www.linkedin.com/in/breannaschmidt/" target="_blank">
+          <img src="assets/images/svg-download/linkedin.svg" class="svg--small">
+        </a>
+      </div>
+    </div>
+    <div class="modal__close">
+      X
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+
+  <script src="assets/scripts/app-d44dd6b21b.js"></script>
+  <script type="text/javascript">
+    var slideShow = new SlideShow();
+  </script>
+
+</body>
+</html>
